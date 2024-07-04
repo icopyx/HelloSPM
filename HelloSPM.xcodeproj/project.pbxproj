@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		76042D302C3675F800397463 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76042D2F2C3675F800397463 /* ContentView.swift */; };
 		76042D322C3675FA00397463 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76042D312C3675FA00397463 /* Assets.xcassets */; };
 		76042D352C3675FA00397463 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76042D342C3675FA00397463 /* Preview Assets.xcassets */; };
+		76042D4A2C36941500397463 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 76042D492C36941500397463 /* KeychainSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76042D4A2C36941500397463 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = HelloSPM;
+			packageProductDependencies = (
+				76042D492C36941500397463 /* KeychainSwift */,
+			);
 			productName = HelloSPM;
 			productReference = 76042D2A2C3675F800397463 /* HelloSPM.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 76042D212C3675F800397463;
+			packageReferences = (
+				76042D482C36941500397463 /* XCLocalSwiftPackageReference "../../../Downloads/keychain-swift-master" */,
+			);
 			productRefGroup = 76042D2B2C3675F800397463 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		76042D482C36941500397463 /* XCLocalSwiftPackageReference "../../../Downloads/keychain-swift-master" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../../Downloads/keychain-swift-master";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		76042D492C36941500397463 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 76042D222C3675F800397463 /* Project object */;
 }
